@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwind</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+     <link rel="stylesheet" href="main.css">
+     <script src="https://unpkg.com/feather-icons"></script>
+
+     <style>
+        @keyframes up {
+            to {
+             top: -100%; /* Adjust the value to control the movement speed */
+               }
+        }
+
+                .animate-up {
+                animation: up 20s linear infinite; /* Adjust the duration and easing as needed */
+                }
+     </style>
+
+</head>
+<body>
+
+    <div class="relative overflow-x-hidden w-full">
+
+         <!-- ye hai nav-Bar -->
+    <nav class="bg-deepBlue ">
+        <div class="flex relative w-[1080px] mx-auto  items-center justify-between  ">
+            <!-- is pure ke pure div tag ke andar saari ki saari items aane wali hai -->
+             <!-- Razorpay ka jo image hai wo ek link hai that means ki wo anchor tag ke andr hai -->
+              <!-- logo -->
+               <a href="" class="cursor-pointer  py-7 pr-7">
+                <!-- is tag ke andar image thi to image dalenge -->
+                <img class="fill-white"
+                src="./image/razorpayX.svg"
+                width="125px"
+                height="30px "/>
+               </a>
+
+               <ul class="flex space-x-8 justify-center items-center">
+
+                <li class="text-white cursor-pointer hover:text-blue-400 font-mullish py-7 transition-all duration-200 relative group  ">
+
+                    <!-- is tag ke andar link h -->
+                    <a href="#">payments</a>
+                    <!-- hover karne pe niche jo ek line aa rahi hai uske liye hm div ka use karenge -->
+                     <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200 "></div>
+
+                </li>
+
+                <li class="text-white cursor-pointer hover:text-blue-400 font-mullish py-7 transition-all duration-200 relative group  ">
+
+                    <!-- is tag ke andar link h -->
+                    <a href="#">banking</a>
+                    <!-- hover karne pe niche jo ek line aa rahi hai uske liye hm div ka use karenge -->
+                     <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200 "></div>
+
+                </li>
+
+                <li class="text-white cursor-pointer hover:text-blue-400 font-mullish py-7 transition-all duration-200 relative group  ">
+
+                    <!-- is tag ke andar link h -->
+                    <a href="#">Corportate Card </a>
+                    <!-- hover karne pe niche jo ek line aa rahi hai uske liye hm div ka use karenge -->
+                     <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200 "></div>
+
+                </li>
+
+                <li class="text-white cursor-pointer hover:text-blue-400 font-mullish py-7 transition-all duration-200 relative group  ">
+
+                    <!-- is tag ke andar link h -->
+                    <a href="#"></a>
+                    <!-- hover karne pe niche jo ek line aa rahi hai uske liye hm div ka use karenge -->
+                     <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200 "></div>
+
+                </li>
+
+                <li class="text-white cursor-pointer hover:text-blue-400 font-mullish py-7 transition-all duration-200 relative group  ">
+
+                    <!-- is tag ke andar link h -->
+                    <a href="#">payroll</a>
+                    <!-- hover karne pe niche jo ek line aa rahi hai uske liye hm div ka use karenge -->
+                     <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200 "></div>
+
+                </li>
+
+
+                <li class="text-white cursor-pointer hover:text-blue-400 font-mullish py-7 transition-all duration-200 relative group  ">
+
+                    <!-- is tag ke andar link h -->
+                    <a href="#">Resources</a>
+                    <!-- hover karne pe niche jo ek line aa rahi hai uske liye hm div ka use karenge -->
+                     <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200 "></div>
+
+                </li> 
+
+
+                <li class="text-white cursor-pointer hover:text-blue-400 font-mullish py-7 transition-all duration-200 relative group  ">
+
+                    <!-- is tag ke andar link h -->
+                    <a href="#">support</a>
+                    <!-- hover karne pe niche jo ek line aa rahi hai uske liye hm div ka use karenge -->
+                     <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200 "></div>
+
+                </li>
+
+
+                <li class="text-white cursor-pointer hover:text-blue-400 font-mullish py-7 transition-all duration-200 relative group  ">
+
+                    <!-- is tag ke andar link h -->
+                    <a href="#">pricing</a>
+                    <!-- hover karne pe niche jo ek line aa rahi hai uske liye hm div ka use karenge -->
+                     <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200 "></div>
+
+                </li>
+                <img src="./image/indian-flag.jpeg" alt="this is indian flag" class="w-10 h-7" >
+               
+               </ul>
+
+               <button class="py-2 px-3 font-mullish text-white border-lightBlue border text-sm  font-bold ">Log in </button>
+               <button class="text-lightBlue300 font-mullish font-bold border border-white py-1 px-2 bg-white 
+                transition-all duration-200 hover:text-blue-500 rounded  "  >Signup</button>
+
+
+        </div>
+
+    </nav>
+    <!-- ab hm create karenge nav-bar ka niche wala section -->
+     <!-- to uske liye sabse pehle ek div lenge usme  daalenge fir us div ke andar 2 div aur create karenge -->
+      <!-- width of first div 100% karnge jiske andar banki ke 2 div aayenge -->
+    <section class="relative  bg-deepBlue ">
+        <!--[DIV CONTAIN LEFT AND RIGHT DIV] ab is wale div ke andar hamara left portion aayega aur chao to right part v iske andar aa jayega -->
+        <div class="flex lg:flex-row sm:flex-col justify-between  items-center  w-10/12 max-w-[1080px] mx-auto ">
+             <!-- [LEFT]to pehle left wale part pe kaam krte hain -->
+            <div class="space-y-8 " >
+                <h1 class="font-bold text-3xl leading-9 font-mullish text-white " >Power your Finanace, grow your business</h1>
+               <div class="w-6 h-1 bg-green-500"></div>
+                <p class="font-mullish text-[18px] leading-7 text-white" >Accept payment from customers
+                    . Automate payout to vendors & employees. 
+                    Never run out of working capital 
+                </p>
+                <button class="text-white border-none bg-lightBlue  rounded-md px-[2px] py-[8px] size-2/5  hover:bg-blue-500 transition-all duration-200 font-mullish font-bold" >Sign up now 
+                </button>
+            </div>
+
+
+              <!--[RIGHT] ab is wale div me hamara right part aa jayega -->
+             
+            
+                <img src="./image/hero-illustration.jpg " alt="This is the image of 1st part" 
+                class="w-full max-w-[680px]">      
+       
+         </div>
+
+         <!-- [TRIANGLE SHAPE] left-right wale div se bahar hmne shape wala div bnaya h -->
+          <div class="w-[103%]  absolute left-0 right-0">
+            <img src="./image/triangle.png" alt="this is the image of a triangle" class="w-full object-fill">
+          </div>
+       
+       
+    </section>
+ 
+
+    <!-- 1st section[HERO SECTION] after nav bar has been completed successfully -->
+
+    <!--Feature Section -- > feature section ke niche wala v isi seciton me hai  -->
+    <section class="relative overflow-hidden mt-[190px] ">
+
+
+        <img src="./image/dotted-arrows-2.png" alt="" loading="lazy" 
+        width="233"
+        height="167"
+        class="absolute -top-[8rem] left-[10rem] inline-block -z-10">
+  
+        <img src="./image/dotted-arrows.png" alt="" loading="lazy"
+        width="233"
+        height="167"
+        class="absolute top-[3rem] right-0 inline-block rotate-180">
+  
+
+ 
+        <!-- ye wo div h jiske andar,heading, green div, content div h -->
+     <div class="relative mx-auto pt-4 w-11/12 max-w-[1080px]   ">
+            <h2 class="font-mullish font-extrabold text-center leading-[1.2]  text-2xl">Accepts Payment with Razorpay Payment suite</h2>
+            <div class="bg-green-500 w-6 h-1 mx-auto mt-4 mb-6"></div>
+            <!-- content wala div babbar ne yahin bnaya hai -->
+
+          <!-- content wala div as per my thought bahar nhi  banayee -->
+           <!-- ab is content wale div ke andar hoga hmara [LEFT] &[RIGHT-only image no inside any div as to overlap] part   -->
+         <div class="w-full bg-white rounded-md relative  p-10 py-12 min-h-[520px] overflow-hidden border ">
+            <!-- left-part -->
+             <div class="  flex-col w-full justify-between ">
+                <h3 class="font-mullish text-[28px] leading-10 font-bold max-w-[500px]">supercharge your business with all -powerful <span class="text-blue-500">payment Gateway</span></h3>
+
+
+                <ul class="space-y-2">
+
+                    <li class="font-mullish flex items-center space-x-2">
+                        <img src="./image/check-icon.png" alt="this is the tick icon" class="h-8 w-6">
+                        <span> this is shashank</span>
+                    
+                    </li>
+
+
+                    <li class="font-mullish flex items-center space-x-2">
+                        <img src="./image/check-icon.png" alt="this is the tick icon" class="h-8 w-6">
+                        <span>this is your helper</span>
+                    </li>
+
+
+                    <li class="font-mullish flex items-center space-x-2">
+                         <img src="./image/check-icon.png" alt="this is the tick icon" class="h-8 w-6">
+                         <span>feel free to reach</span>
+                     </li>
+
+                    <li class="font-mullish flex items-center space-x-2"> 
+                        <img src="./image/check-icon.png" alt="this is the tick icon" class="h-8 w-6">
+                        <span>24*7 available</span>
+                    </li>
+
+
+                    <li class="font-mullish flex items-center space-x-2">
+                         <img src="./image/check-icon.png" alt="this is the tick icon" class="h-8 w-6">
+                         <span>help in time</span>
+                        </li>
+
+
+                    <li class="font-mullish flex items-center space-x-2"> 
+                        <img src="./image/check-icon.png" alt="this is the tick icon" class="h-8 w-6">
+                        <span>quicker Access to shashank</span>
+                    </li>
+
+
+                </ul>
+
+
+                <!--[BUTTON] & [HYPERLINK] ab is wale div me hoga button aur hyperlink -->
+                <div class="flex flex-row items-center space-y-4">
+                    <button class="border bg-lightBlue font-mullish font-bold rounded text-white px-[18px] py-[14px] hover:bg-blue-700 transition-all duration-300 ">sign up now</button>
+                    <div class="flex">
+                        <a href="" class="text-blue-400 font-mullish font-extrabold">Know more</a>
+                        <img src="./image/right-arrow.png" alt=""
+                        class="w-5 h-5 ">
+
+                    </div>
+                </div>
+
+             </div>
+             <!-- ye left-part ka div hai -->
+
+
+             <!-- ab background me jo image laga hai uske liye waise to right me hai par uske liye ham div nahi bana rahe hain as image ko left section se over-lap karwana hai sayd isliye  -->
+              <img src="./image/payment-suite.png" alt="" class="max-w-[600px] absolute right-0 bottom-0">
+              <!-- ek tarah se RIGHT PART -->
+
+              
+           </div>
+           <!-- ye content wala div hai  -->
+
+
+        </div>  <!--  ye wo div hai jiske andar heading, chhota div block, left part and right part ka imgage aayega,[FEATURE-SECTION ] -->
+
+
+
+        <!-- feature-section ke just niche wala section -->
+         <div class="w-full grid grid-cols-3 gap-4 max-w-[1080px] mx-auto pt-4" >
+
+
+
+             <!-- box-1 -->
+                <div class="w-full cursor-pointer relative min-h-[15rem] ">
+
+
+                <img src="./image/payment-link-icon.svg" alt="here is some imgage"
+                class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8]
+                transition-all duration-200">>
+             <!-- box-1-shape -->
+             <svg
+             viewBox="0 0 349.32501220703125 225"
+             xmlns="http://www.w3.org/2000/svg"
+             preserveAspectRatio="none"
+             class="stroke-1 stroke-[#818597] h-full w-full absolute z-[9] transition-all duration-200"
+             style="stroke-opacity: 0.15"
+              >
+       <path
+             d="m 0 6 
+         a 6 6 0 0 1 6 -6 
+         h 250.32501220703125 
+         a 16 16 0 0 1 11 5 
+         l 77 77 
+         a 16 16 0 0 1 5 11 
+         v 126 
+         a 6 6 0 0 1 -6 6 
+         h -337.32501220703125 
+         a 6 6 0 0 1 -6 -6 
+         z"
+             fill="#fff"
+       ></path>
+         </svg>
+
+         <!-- box-1 ka content -->
+          <div class="z-[100] absolute h-full w-full flex-col pl-5 py-10 pr-8">
+            <h3 class="font-mullish font-bold leading-3 text-deepBlueHead text-size-[1.375rem]">Payment links</h3>
+            <p class="font-mullish text-grayText mt-6">share payment link via an email, sms, messenger, chatbot etc and get paid immediately</p>
+            <a href="" class="font-mullish font-bold text-lightBlue group-hover:text-lightGray transiton all duration-200 ">know more</a>
+          </div>
+
+                </div> <!--  ye box-1 ka div hai  -->
+
+
+                
+                <!-- box-2 -->
+                <div  class="w-full cursor-pointer relative min-h-[15rem] " >
+
+                <img src="./image/payment-link-icon.svg" alt="here is some imgage"
+                class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8]
+                transition-all duration-200">>
+             <!-- box-2-shape -->
+             <svg
+             viewBox="0 0 349.32501220703125 225"
+             xmlns="http://www.w3.org/2000/svg"
+             preserveAspectRatio="none"
+             class="stroke-1 stroke-[#818597] h-full w-full absolute z-[9] transition-all duration-200"
+             style="stroke-opacity: 0.15"
+              >
+       <path
+             d="m 0 6 
+         a 6 6 0 0 1 6 -6 
+         h 250.32501220703125 
+         a 16 16 0 0 1 11 5 
+         l 77 77 
+         a 16 16 0 0 1 5 11 
+         v 126 
+         a 6 6 0 0 1 -6 6 
+         h -337.32501220703125 
+         a 6 6 0 0 1 -6 -6 
+         z"
+             fill="#fff"
+       ></path>
+         </svg>
+
+         <!-- box-2 ka content -->
+          <div class="z-[100] absolute h-full w-full flex-col pl-5 py-10 pr-8">
+            <h3 class="font-mullish font-bold leading-3 text-deepBlueHead text-size-[1.375rem]">Payment links</h3>
+            <p class="font-mullish text-grayText mt-6">share payment link via an email, sms, messenger, chatbot etc and get paid immediately</p>
+            <a href="" class="font-mullish font-bold text-lightBlue group-hover:text-lightGray transiton all duration-200 ">know more</a>
+          </div>
+
+
+                </div> <!-- ye box-2 ka ending div hai -->
+
+
+                <!-- box-3 -->
+                <div  class="w-full cursor-pointer relative min-h-[15rem] ">
+
+                <img src="./image/payment-link-icon.svg" alt="here is some imgage"
+                class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8]
+                transition-all duration-200">>
+             <!-- box-3-shape -->
+             <svg
+             viewBox="0 0 349.32501220703125 225"
+             xmlns="http://www.w3.org/2000/svg"
+             preserveAspectRatio="none"
+             class="stroke-1 stroke-[#818597] h-full w-full absolute z-[9] transition-all duration-200"
+             style="stroke-opacity: 0.15"
+              >
+       <path
+             d="m 0 6 
+         a 6 6 0 0 1 6 -6 
+         h 250.32501220703125 
+         a 16 16 0 0 1 11 5 
+         l 77 77 
+         a 16 16 0 0 1 5 11 
+         v 126 
+         a 6 6 0 0 1 -6 6 
+         h -337.32501220703125 
+         a 6 6 0 0 1 -6 -6 
+         z"
+             fill="#fff"
+       ></path>
+         </svg>
+
+         <!-- box-3 ka content -->
+          <div class="z-[100] absolute h-full w-full flex-col pl-5 py-10 pr-8">
+            <h3 class="font-mullish font-bold leading-3 text-deepBlueHead text-size-[1.375rem]">Payment links</h3>
+            <p class="font-mullish text-grayText mt-6">share payment link via an email, sms, messenger, chatbot etc and get paid immediately</p>
+            <a href="" class="font-mullish font-bold text-lightBlue group-hover:text-lightGray transiton all duration-200 ">know more</a>
+          </div>
+                
+            </div> <!--ye box-3 ka ending hai  -->
+
+
+             <!-- box-4 -->
+                <div  class="w-full cursor-pointer relative min-h-[15rem] ">
+
+                <img src="./image/payment-link-icon.svg" alt="here is some imgage"
+                class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8]
+                transition-all duration-200">>
+             <!-- box-4-shape -->
+             <svg
+             viewBox="0 0 349.32501220703125 225"
+             xmlns="http://www.w3.org/2000/svg"
+             preserveAspectRatio="none"
+             class="stroke-1 stroke-[#818597] h-full w-full absolute z-[9] transition-all duration-200"
+             style="stroke-opacity: 0.15"
+              >
+       <path
+             d="m 0 6 
+         a 6 6 0 0 1 6 -6 
+         h 250.32501220703125 
+         a 16 16 0 0 1 11 5 
+         l 77 77 
+         a 16 16 0 0 1 5 11 
+         v 126 
+         a 6 6 0 0 1 -6 6 
+         h -337.32501220703125 
+         a 6 6 0 0 1 -6 -6 
+         z"
+             fill="#fff"
+       ></path>
+         </svg>
+
+         <!-- box-4 ka content -->
+          <div class="z-[100] absolute h-full w-full flex-col pl-5 py-10 pr-8">
+            <h3 class="font-mullish font-bold leading-3 text-deepBlueHead text-size-[1.375rem]">Payment links</h3>
+            <p class="font-mullish text-grayText mt-6">share payment link via an email, sms, messenger, chatbot etc and get paid immediately</p>
+            <a href="" class="font-mullish font-bold text-lightBlue group-hover:text-lightGray transiton all duration-200 ">know more</a>
+          </div>
+
+
+                </div><!-- ye box-4 ka ending hai -->
+
+
+                <!-- box-5 -->
+                <div  class="w-full cursor-pointer relative min-h-[15rem] ">
+
+                <img src="./image/payment-link-icon.svg" alt="here is some imgage"
+                class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8]
+                transition-all duration-200">>
+             <!-- box-5-shape -->
+             <svg
+             viewBox="0 0 349.32501220703125 225"
+             xmlns="http://www.w3.org/2000/svg"
+             preserveAspectRatio="none"
+             class="stroke-1 stroke-[#818597] h-full w-full absolute z-[9] transition-all duration-200"
+             style="stroke-opacity: 0.15"
+              >
+       <path
+             d="m 0 6 
+         a 6 6 0 0 1 6 -6 
+         h 250.32501220703125 
+         a 16 16 0 0 1 11 5 
+         l 77 77 
+         a 16 16 0 0 1 5 11 
+         v 126 
+         a 6 6 0 0 1 -6 6 
+         h -337.32501220703125 
+         a 6 6 0 0 1 -6 -6 
+         z"
+             fill="#fff"
+       ></path>
+         </svg>
+
+         <!-- box-5 ka content -->
+          <div class="z-[100] absolute h-full w-full flex-col pl-5 py-10 pr-8 ">
+            <h3 class="font-mullish font-bold leading-3 text-deepBlueHead text-size-[1.375rem]">Payment links</h3>
+            <p class="font-mullish text-grayText mt-6">share payment link via an email, sms, messenger, chatbot etc and get paid immediately</p>
+            <a href="" class="font-mullish font-bold text-lightBlue group-hover:text-lightGray transiton all duration-200 ">know more</a>
+          </div>
+
+                </div> <!-- ye box-5 ka ending hai -->
+
+
+                 <!-- box-6 -->
+                     <div  class="w-full cursor-pointer relative min-h-[15rem]">
+
+                <img src="./image/payment-link-icon.svg" alt="here is some imgage"
+                class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8]
+                transition-all duration-200">>
+             <!-- box-6-shape -->
+             <svg
+             viewBox="0 0 349.32501220703125 225"
+             xmlns="http://www.w3.org/2000/svg"
+             preserveAspectRatio="none"
+             class="stroke-1 stroke-[#818597] h-full w-full absolute z-[9] transition-all duration-200"
+             style="stroke-opacity: 0.15"
+              >
+       <path
+             d="m 0 6 
+         a 6 6 0 0 1 6 -6 
+         h 250.32501220703125 
+         a 16 16 0 0 1 11 5 
+         l 77 77 
+         a 16 16 0 0 1 5 11 
+         v 126 
+         a 6 6 0 0 1 -6 6 
+         h -337.32501220703125 
+         a 6 6 0 0 1 -6 -6 
+         z"
+             fill="#fff"
+       ></path>
+         </svg>
+
+         <!-- box-6 ka content -->
+          <div class="z-[100] absolute h-full w-full flex-col pl-5 py-10 pr-8 ">
+            <h3 class="font-mullish font-bold leading-3 text-deepBlueHead text-size-[1.375rem]">Payment links</h3>
+            <p class="font-mullish text-grayText mt-6">share payment link via an email, sms, messenger, chatbot etc and get paid immediately</p>
+            <a href="" class="font-mullish font-bold text-lightBlue group-hover:text-lightGray transiton all duration-200 ">know more</a>
+          </div>
+
+                     </div> <!-- ye box-6 ka ending hai -->
+
+
+
+            </div> <!-- feature-section ke just niche wala div-container-ending- -->
+
+
+            <!-- FEATURE-SECTION-2=================================   -->
+            <section class="bg-[url(./image/feature-section-2BG.svg)] bg-no-repeat bg-cover pb-[350px] mt-14 pt-[10rem]" >
+               
+
+                <!-- ye wo div hai jiske andar pura-feature section daalenge{3NO PART OF FEATURE-SECTION-2 KA AAYEGA} with specified width aur beech me layenge -->
+                 <div class="w-10/12 max-w-[1080px] relative pt-4  mx-auto ">
+      
+                     <h2 class="font-mullish font-extrabold text-white text-center text-2xl leading-[1.2]"
+                     >Explore Razorpay Business Banking</h2>
+                     <div class="bg-green-600 h-1 w-5 mt-4 mb-6 mx-auto"></div>
+
+                    <div  class="w-full min-h-[440px] flex-col  relative ] "> <!-- is div me feature-section-2 ka pehla {FIRST-FEATURE-BOX aayega}  property set karenge like width,flex... -->
+                        <img src="./image/x-flame-1.png" alt="image of flame-1"
+                        loading="lazy"
+                        class="absolute -top-[142px] -left-[140px] w-[200px] ">
+                        
+                        <img src="./image/x-flame-2.png" alt="image of flame-2" 
+                        loading="lazy "
+                        class="absolute top-[150px] -right-[180px] w-[200px]">
+
+                    
+                 <div  class="relative w-full p-10 py-12  bg-[#181c2e] border border-slate-700 z-20 rounded-md "> <!-- basically isme left aur right dono hoga-->
+
+
+                       <div class="w-full flex flex-col justify-between items-start h-full gap-12 z-20 ">   <!-- [LEFT] part daalna hai iske andar -->
+                       
+                        <h3 class="font-mullish font-bold text-white    text-[28px] max-w-[500px]">
+                            Manage your company's finances with 
+                            <img src="./image/razorpayX.svg" alt=""
+                           width="168px"
+                           height="32px"
+                           class=" inline">
+                            <span class="text-greenLight h-200 w-7" >Bussiness Banking</span>
+                           </h3>
+
+                        <ul class="space-y-2">
+
+                           <li class="flex items-center text-white font-mullish space-x-2 ">
+                               <img src="./image/tick-icon.png" alt="" class="w-7 h-7">
+                               <span>Open a fully digital current account</span>
+
+                           </li>
+
+
+                           <li class="text-white font-mullish flex items-center space-x-2">
+                               <img src="./image/tick-icon.png" alt="" class="w-7 h-7">
+                               <span>automote the service required</span>
+                           </li>
+
+
+                           <li class="font-mullish text-white flex items-center space-x-2">
+                               <img src="./image/tick-icon.png" alt="" class="w-7 h-7">
+                              <span>Availability one step away</span>
+                           </li>
+
+
+                           <li class="font-mullish text-white flex items-center space-x-2">
+                               <img src="./image/tick-icon.png" alt="" class="w-7 h-7">
+                               <span> list things differently</span>
+                           
+                           </li>
+
+                       </ul>
+
+                       <!-- button and know more ka ek alg div bana lete hain -->
+                       <div class="flex flex-row space-x-4  w-full items-center ">
+                           <div> <button class=" relative  font-mullish text-white rounded bg-blue-600 w-full flex items-center justify-start py-[14px] px-[18px] pr-[90px]   transition-all duration-200 hover:bg-blue-800 " >Sign up </button>
+
+                            <div class="w-12 h-[60px] absolute mx-20 -my-[60px] bg-green-500 skew-x-[20deg] justify-center items-center  " >
+                                
+                                <!-- arrow ka svg code -->
+                             <svg class="h-15 w-15 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path style="fill:#d8d8e2" d="m17.5 5.999-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z" data-name="Right"/></svg>
+                            </div>
+                   
+                              
+                           </div>
+
+                           <!-- hyperlink wala hai ye  -->
+                           <div class="flex flex-row items-center cursor-pointer group">  
+                               <a href="#" 
+                               class="font-mullish text-blue-400 group-hover:text-blue-600 transition-all duration-200">know more  
+                               <svg class="w-6 h-6 inline-block  group-hover:text-blue-600 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
+                              </svg>
+                            </a>
+                               
+                              
+                           </div>
+                   
+                         
+                       </div> <!--button and know more wale ka div hai-->
+
+                      </div>  <!-- [LEFT] part wala div hai -->
+
+                      <!-- RIGHT-PART me bas image hai -->
+                       <img src="./image/feature-section.png" alt=""
+                       class="max-w-[600px] absolute right-0 bottom-0">
+
+                 </div> <!-- Basically isme left aur right prt dono hai -->
+
+
+
+
+                 <!-- cards-section ab banana hai=========== -->
+                  <div class="grid grid-cols-3 gap-4 my-14">
+                    <!-- box-1 -->
+                    <div class="w-full min-h-[15rem] relative cursor-pointer">
+                        <!-- image -->
+                         <img src="./image/payment-link-icon.svg" alt=""
+                         class="bg-lightBlue right-3 top-3 w-12 h-12 rounded-full z-50 absolute">
+                        <!-- box-shape -->
+                        <svg
+                        viewBox="0 0 349.32501220703125 225"
+                        xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="none"
+                        class="stroke-1 stroke-[#525a76] h-full w-full absolute z-[90] featureCardSVG transition-all duration-200"
+                        style="stroke-opacity: 0.8"
+                      >
+                        <path
+                          d="m 0 6 
+                        a 6 6 0 0 1 6 -6 
+                        h 250.32501220703125 
+                        a 16 16 0 0 1 11 5 
+                        l 77 77 
+                        a 16 16 0 0 1 5 11 
+                        v 126 
+                        a 6 6 0 0 1 -6 6 
+                        h -337.32501220703125 
+                        a 6 6 0 0 1 -6 -6 
+                        z"
+                          fill="#181C2E"
+                        ></path>
+                      </svg>
+                        <!-- Box-content -->
+                         <div class=" absolute z-[1000] h-full w-full pl-5 pr-8 py-6 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-mullish font-extralight text-white leading-3 text-[1.375rem] mb-6">Current Account</h3>
+                                <p class="font-mullish text-grayText">  Current accounts for fast-growing businesses, supported by the
+                                    best-in-class technology</p>
+                            </div>
+                            <!-- know more-wala div -->
+                             <div class="flex items-center text-lightBlue">
+                                <a href="#">Know more</a>
+                                <!-- svg code of icon daalna hoga -->
+                                <svg class="w-[23px] h-[23px] " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
+                                  </svg>
+                                  
+
+
+                             </div>
+
+                         </div>
+                     </div> <!-- first card-->
+                       
+                        
+                     <!-- box-2 -->
+                      <div class="w-full min-h-[16rem] cursor-pointer relative ">
+                        <!-- image -->
+                        <img src="./image/payment-link-icon.svg" alt=""
+                         class="bg-lightBlue right-3 top-3 w-12 h-12 rounded-full z-10 absolute">
+
+                        <!-- box-shape -->
+                        <svg
+                        viewBox="0 0 349.32501220703125 225"
+                        xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="none"
+                        class="stroke-1 stroke-[#525a76] h-full w-full absolute z-[90] featureCardSVG transition-all duration-200"
+                        style="stroke-opacity: 0.8"
+                      >
+                        <path
+                          d="m 0 6 
+                        a 6 6 0 0 1 6 -6 
+                        h 250.32501220703125 
+                        a 16 16 0 0 1 11 5 
+                        l 77 77 
+                        a 16 16 0 0 1 5 11 
+                        v 126 
+                        a 6 6 0 0 1 -6 6 
+                        h -337.32501220703125 
+                        a 6 6 0 0 1 -6 -6 
+                        z"
+                          fill="#181C2E"
+                        ></path>
+                      </svg>
+                      <!-- box-content -->
+                      <div class=" absolute z-[1000] h-full w-full pl-5 pr-8 py-6 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-mullish font-extralight text-white leading-3 text-[1.375rem] mb-6">Capital & Credit</h3>
+                            <p class="font-mullish text-grayText">  Current accounts for fast-growing businesses, supported by the
+                                best-in-class technology</p>
+                        </div>
+                        <!-- know more-wala div -->
+                         <div class="flex items-center text-lightBlue">
+                            <a href="#">Know more</a>
+                            <!-- svg code of icon daalna hoga -->
+                            <svg class="w-[23px] h-[23px] " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
+                              </svg>
+                              
+
+
+                         </div>
+
+                     </div>
+
+
+
+                      </div> <!-- 2nd card -->
+
+
+                      <!-- box-3 -->
+                       <div class="w-full min-h-[15rem] cursor-pointer relative">
+                        <img src="./image/payment-link-icon.svg" alt=""
+                         class="bg-lightBlue right-3 top-3 w-12 h-12 rounded-full z-10 absolute">
+                         <!-- box-shape -->
+                         <svg
+                         viewBox="0 0 349.32501220703125 225"
+                         xmlns="http://www.w3.org/2000/svg"
+                         preserveAspectRatio="none"
+                         class="stroke-1 stroke-[#525a76] h-full w-full absolute z-[90] featureCardSVG transition-all duration-200"
+                         style="stroke-opacity: 0.8"
+                       >
+                         <path
+                           d="m 0 6 
+                         a 6 6 0 0 1 6 -6 
+                         h 250.32501220703125 
+                         a 16 16 0 0 1 11 5 
+                         l 77 77 
+                         a 16 16 0 0 1 5 11 
+                         v 126 
+                         a 6 6 0 0 1 -6 6 
+                         h -337.32501220703125 
+                         a 6 6 0 0 1 -6 -6 
+                         z"
+                           fill="#181C2E"
+                         ></path>
+                       </svg>
+                       <!-- box-content -->
+                       <div class=" absolute z-[1000] h-full w-full pl-5 pr-8 py-6 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-mullish font-extralight text-white leading-3 text-[1.375rem] mb-6">Payouts</h3>
+                            <p class="font-mullish text-grayText">  Current accounts for fast-growing businesses, supported by the
+                                best-in-class technology</p>
+                        </div>
+                        <!-- know more-wala div -->
+                         <div class="flex items-center text-lightBlue">
+                            <a href="#">Know more</a>
+                            <!-- svg code of icon daalna hoga -->
+                            <svg class="w-[23px] h-[23px] " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
+                              </svg>
+                              
+
+
+                         </div>
+
+                     </div> 
+
+
+
+                       </div>
+
+
+                  </div> <!-- isme 3no cards aayenge-->
+
+                  <!-- Now last part of the secition, i.e Demo box -->
+                   <div class="border border-slate-700 w-full  p-8 gap-y-6  flex items-center justify-evenly rounded-md relative  mb-24 ">
+                    
+                        <p class="font-mullish text-white">Check out the live demo to learn how RazorpayX works.
+                            <span class="font-mullish font-bold">No sign-up required!</span>
+                        </p>
+                    
+                    <!-- know-more ka ek div bana lete hain -->
+                    
+        
+                    
+                        <button class="text-white font-mullish font-bold relative rounded-md bg-blue-500 
+                        py-3 px-8 hover:bg-blue-700 transition-all duration-200 md:pr-[90px]
+                        flex items-center justify-start ">check out the demo 
+
+                        <div class="bg-green-600 h-[60px]  w-12  skew-x-[25deg] right-6 absolute 
+                        flex items-center justify-center  ">
+                        
+                        <!-- svg code of an arrow -->
+                        <svg
+                                  viewBox="0 0 24 24"
+                                  focusable="false"
+                                  class="w-[20px] h-[20px] -skew-x-[20deg] "
+                                >
+                                  <path
+                                    fill="currentColor"
+                                    d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                                  ></path>
+                                </svg>
+                        
+                    
+                        </div> 
+                        
+                        </button>   
+
+                    </div> <!-- this div is for the demo section -->
+
+
+
+                    </div> <!--pura feature-section  to banaya hi hai jisme 3no section aaye-->
+
+
+
+                 </div>  <!-- pura feature section-2 wala div hai  -->
+
+
+
+
+            </section> <!--feature-section-2 ka -->
+
+
+            <!-- feature-section-3================================= -->
+
+            <section class="relative">
+                <!-- aisa div jiske andar image and cards aayenge to obviously iski h,w set krnenge  -->
+                 <!-- fir iske andar ek div create karenge jimse cards aayegi -->
+                <div class="relative mx-auto pt-20 max-w-[1080px] w-11/12 "> 
+                    <img src="./image/dotted-arrows.png" alt=""
+                    class="absolute left-[300px] -top-[6rem] w-[233px] -z-[10]">
+                    <img src="./image/dotted-arrows.png" alt=""
+                    class="absolute -right-[3.5rem] -top-[6rem] w-[233px] -z-[10]">
+
+
+                    <!-- this is the div jisme cards aayenge -->
+                    <div class="w-full grid grid-cols-3 gap-y-10 gap-x-10 relative z-[10] ">
+                        <!-- item-1 -->
+                         <div class="flex items-center">
+                            <h2 class="text-deepBlueHead font-mullish font-extrabold text-4xl leading-[3.375rem]"> New in the
+                                <span class="text-lightBlue500 flex">
+                                    Razorpay
+                                </span>
+                                Product suite
+                            </h2>
+                         </div>
+                         <!-- card-1 -->
+                          <div class="p-10 bg-[url(/image/instant-settlement-bg.svg)] cursor-pointer w-full max-h-[300px] hover:scale-105 transition-all duration-200 hover:bg-[url(/image/instant-settlement-bghover.svg)]">
+                            <img src="./image/razorpayXicon.svg" alt="here is the icon of x"
+                            class="w-10 h-10">
+                            <h2 class="font-mullish font-bold text-lg pt-4  ">Corportate Cards</h2>
+                            <p class="font-mullish text-grayText leading-normal py-3">Simplify your recurring, international and team expenses with savings on every spend. Saye upto 10 lacs every monthd</p>
+                            <!-- know-more-1 -->
+                           <div class="flex items-center flex-row group cursor-pointer  ">
+                            <a href="#" class="flex font-mullish font-bold text-blue-500  hover:text-lightBlue transition-all hover:scale-105    duration-200">Know more
+                                <svg class="w-6 h-6 text-blue-500 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
+                                  </svg>      
+                            </a>
+                            
+                           </div> <!--know more-->
+                          </div> <!-- ye hai card-1 ka div -->
+
+                          <!-- card-2 -->
+                          <div class="p-10 bg-[url(/image/instant-settlement-bg.svg)] cursor-pointer w-full max-h-[300px] hover:scale-105 transition-all duration-200 hover:bg-[url(/image/instant-settlement-bghover.svg)]">
+                            <img src="./image/razorpayXicon.svg" alt="here is the icon of x"
+                            class="w-10 h-10">
+                            <h2 class="font-mullish font-bold text-lg pt-4  ">Corportate Cards</h2>
+                            <p class="font-mullish text-grayText leading-normal py-3">Simplify your recurring, international and team expenses with savings on every spend. Saye upto 10 lacs every monthd</p>
+                            <!-- know-more-2 -->
+                           <div class="flex items-center flex-row group cursor-pointer  ">
+                            <a href="#" class="flex font-mullish font-bold text-blue-500  hover:text-lightBlue transition-all hover:scale-105    duration-200">Know more
+                                <svg class="w-6 h-6 text-blue-500 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
+                                  </svg>      
+                            </a>
+                            
+                           </div> <!--know more-->
+                          </div> <!-- ye hai card-2 ka div -->
+
+                          <!-- card-3 -->
+                          <div class="p-10 bg-[url(/image/instant-settlement-bg.svg)] cursor-pointer w-full max-h-[300px] hover:scale-105 transition-all duration-200 hover:bg-[url(/image/instant-settlement-bghover.svg)]">
+                            <img src="./image/razorpayXicon.svg" alt="here is the icon of x"
+                            class="w-10 h-10">
+                            <h2 class="font-mullish font-bold text-lg pt-4  ">Corportate Cards</h2>
+                            <p class="font-mullish text-grayText leading-normal py-3">Simplify your recurring, international and team expenses with savings on every spend. Saye upto 10 lacs every monthd</p>
+                            <!-- know-more-3 -->
+                           <div class="flex items-center flex-row group cursor-pointer  ">
+                            <a href="#" class="flex font-mullish font-bold text-blue-500  hover:text-lightBlue transition-all hover:scale-105    duration-200">Know more
+                                <svg class="w-6 h-6 text-blue-500 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
+                                  </svg>      
+                            </a>
+                            
+                           </div> <!--know more-->
+                          </div> <!-- ye hai card-3 ka div -->
+
+                          <!-- card-4 -->
+                          <div class="p-10 bg-[url(/image/instant-settlement-bg.svg)] cursor-pointer w-full max-h-[300px] hover:scale-105 transition-all duration-200 hover:bg-[url(/image/instant-settlement-bghover.svg)]">
+                            <img src="./image/razorpayXicon.svg" alt="here is the icon of x"
+                            class="w-10 h-10">
+                            <h2 class="font-mullish font-bold text-lg pt-4  ">Corportate Cards</h2>
+                            <p class="font-mullish text-grayText leading-normal py-3">Simplify your recurring, international and team expenses with savings on every spend. Saye upto 10 lacs every monthd</p>
+                            <!-- know-more-4 -->
+                           <div class="flex items-center flex-row group cursor-pointer  ">
+                            <a href="#" class="flex font-mullish font-bold text-blue-500  hover:text-lightBlue transition-all hover:scale-105    duration-200">Know more
+                                <svg class="w-6 h-6 text-blue-500 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
+                                  </svg>      
+                            </a>
+                            
+                           </div> <!--know more-->
+                          </div> <!-- ye hai card-4 ka div -->
+
+                          <!-- card-5 -->
+                          <div class="p-10 bg-[url(/image/instant-settlement-bg.svg)] cursor-pointer w-full max-h-[300px] hover:scale-105 transition-all duration-200 hover:bg-[url(/image/instant-settlement-bghover.svg)]">
+                            <img src="./image/razorpayXicon.svg" alt="here is the icon of x"
+                            class="w-10 h-10">
+                            <h2 class="font-mullish font-bold text-lg pt-4  ">Corportate Cards</h2>
+                            <p class="font-mullish text-grayText leading-normal py-3">Simplify your recurring, international and team expenses with savings on every spend. Saye upto 10 lacs every monthd</p>
+                            <!-- know-more-5 -->
+                           <div class="flex items-center flex-row group cursor-pointer  ">
+                            <a href="#" class="flex font-mullish font-bold text-blue-500  hover:text-lightBlue transition-all hover:scale-105    duration-200">Know more
+                                <svg class="w-6 h-6 text-blue-500 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
+                                  </svg>      
+                            </a>
+                            
+                           </div> <!--know more-->
+                          </div> <!-- ye hai card-5 ka div -->
+
+                    </div> <!-- ye wo div jisme saare cards aayenge   -->
+                </div> <!-- ye hai universal div which has fixed size and length and it is just after section -->
+            </section> <!--feature-section 3 ka hai ye  -->
+
+
+            <!-- feature section-4============ -->
+             <section class="w-full  bg-[url(/image/core-features-sectionBg.svg)] mt-14 relative bg-cover bg-no-repeat bg-center pt-32
+             pb-36  ">
+                <!-- apke saari chizen iske area ke andr hi aayegi  -->
+                <div class="w-11/12 max-w-[1080px] mx-auto relative pt-20 ">
+                    <p class="font-mullish font-extrabold text-2xl text-white text-center">Features</p>
+                    <div class="bg-green-500 w-[20px] h-1 mx-auto mt-4 mb-6"></div>
+                    <h3 class="font-mullish max-w-[400px] mx-auto text-white mb-4 text-center">Empower your business with all the right tools to accept online payments and provide the best customer experience</h3>
+                   
+                    <!-- ye wala div for making cards -->
+                    <div class="grid grid-cols-4 relative gap-[2rem] mt-8">  
+                         <!--card1-->
+              <div>
+                <img src="./image/instant-activation-icon.svg" alt=""
+                >
+                <h3 class="font-mullish text-white text-lg font-bold my-4">Instant Activation</h3>
+                <p class="font-mullish text-wh">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
+            </div>
+            <!--card2-->
+            <div>
+                <img src="./image/easy-integration.svg" alt=""
+                >
+                <h3 class="font-mullish text-white text-lg font-bold my-4">Easy Integration</h3>
+                <p class="font-mullish text-wh">With plugins for all major platforms and languages, integrate and go live with Razorpay in less than an hour..</p>
+            </div>
+            <!--card3-->
+            <div>
+                <img src="./image/api-driven-icon.svg" alt=""
+                >
+                <h3 class="font-mullish text-white text-lg font-bold my-4">API Driven</h3>
+                <p class="font-mullish text-wh">Build you business for scale with our complete API-driven automation that requires zero manual intervention.</p>
+            </div>
+            <!--card4-->
+            <div>
+                <img src="./image/" alt=""
+                >
+                <h3 class="font-mullish text-white text-lg font-bold my-4">100+ payment modes</h3>
+                <p class="font-mullish text-wh">Offer your customers the luxury of all payment modes including Credit/Debit cards, Netbanking,
+                  UPI, Wallets etc.</p>
+            </div>
+            <!--card5-->
+            <div>
+                <img src="./image/simple-pricing.svg" alt=""
+                >
+                <h3 class="font-mullish text-white text-lg font-bold my-4">Simple Pricing
+                  </h3>
+                <p class="font-mullish text-wh">Our innovative payment solutions with competitive pricing make payments simpler.</p>
+            </div>
+            <!--card6-->
+            <div>
+                <img src="./image/secure-icon.svg" alt=""
+                >
+                <h3 class="font-mullish text-white text-lg font-bold my-4">Secure</h3>
+                <p class="font-mullish text-wh">PCI DSS Level 1 compliant solution which removes your burden of regulatory compliance.</p>
+            </div>
+            <!--card7-->
+            <div>
+                <img src="./image/industry-support-icon (1).svg" alt=""
+                >
+                <h3 class="font-mullish text-white text-lg font-bold my-4">Best in Industry Support</h3>
+                <p class="font-mullish text-wh">Always available email, phone and chat based support to help you in your every step.</p>
+            </div>
+            <!--card8-->
+            <div>
+                <img src="./image/instant-activation-icon.svg" alt=""
+                >
+                <h3 class="font-mullish text-white text-lg font-bold my-4">Dashboard Reporting</h3>
+                <p class="font-mullish text-wh">Real-time data and insights on your Razorpay Dashboard to make informed business decisions.</p>
+            </div>
+
+                         
+                    </div> <!--ye saare cards ka div-->
+
+                </div>
+             </section>
+
+
+
+             <!-- feature-section-5================= -->
+              <section class="w-full relativee mt-14 bg-[#f5f8fe] ">
+                <!--this is fixed length and breadth div -->
+                <div class="w-11/12 max-w-[1080px] relative pt-14 mx-auto">
+
+                    <!-- ye wo div hai jisme left aur right part dono aayega -->
+                     <!-- isme flex ka use karna hoga -->
+                     <div class="flex space-x-9 mt-8">
+
+
+                        <!-- left-part ke liye div  -->
+                         <div class="space-y-4 max-w-[500px]">
+                            <h1 class="font-mullish font-extrabold text-2xl text-deepBlueHead ">loin the 50,00,000+ businesses using Razorpay</h1>
+                            <div class="w-8 h-1 bg-green-500"></div>
+                            <p class="font-mull">We make it easier for you to focus on building great products while we work on simplifying your payments. Become one of us by joining thousands of our happy users and simplify the online payment experience for your customers.</p>
+                            <p class="font-mull">Focus on your business while we handle the complexities of payments for you.</p>
+                         </div> <!-- left-part div -->
+
+                         <!-- right-part ka div -->
+                         <div class="overflow-y-hidden h-[500px] w-[500px] relative">
+
+                            <img src="./image/comanies (1).png" alt="images of many companies"
+                            class="absolute h-auto object-cover  top-0 left-0 animate-up pb-5 ">
+
+                         </div>
+
+                        
+
+                     </div> <!--left and right dono ka div -->
+
+
+
+
+
+
+
+                </div> <!-- length and breadth wala div hai -->
+              </section>
+
+
+              <!-- feature-section-6=============== -->
+
+              <section class="relative mt-14">
+                <!-- length and breadth wali div -->
+                <div class=" max-w-[1300px] w-11/12 relative mx-auto py-20 ">
+                    <h1 class="font-mullish font-extrabold text-deepBlueHead text-2xl text-center" >An Experience
+                      <br>  People Love to Talk About</h1>
+                    <div class="w-6 h-1 bg-greenLight mx-auto mt-4 "></div>
+                    <img src="./image/dotted-arrows.png" alt=""
+                    class="absolute top-[8rem] left-[8rem] -z-10 ">
+
+                    <!-- left-button -->
+                        <button class="rounded-full absolute left-0 top-1/2 bg-[#f4f8ff]">
+                            <div>
+                                <svg class="w-11 h-11 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="" height="24" fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
+                                  </svg>
+                                  
+                            </div>
+                           
+                        </button>
+
+                     <!-- Right-button -->
+                        <button class="rounded-full absolute right-0 top-1/2 bg-[#f4f8ff]">
+                            <div>
+                                <svg class="w-11 h-11 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
+                                  </svg>
+                                  
+                            </div>
+    
+                        </button>
+                      <!-- main-content -->
+                       <div class="flex space-x-28  justify-center mt-14 ">
+                        <!-- left-part -->
+                         <img src="./image/testimonial.jpg" alt=""
+                         class="h-[320px] w-[320px] rounded-xl">
+                         <!-- Right-part -->
+                          <div class="max-w-[400px] ">
+                            <img src="./image/quotes.svg" alt=""
+                            class="h-[30px]">
+                            <h1 class="font-mullish font-extralight text-3xl">Readymade Closed Wallet Solution For Quick Refunds</h1>
+                            <a href="#" class="text-grayText italic underline">Learn more</a>
+                            <h3 class="font-mullish font-extrabold text-2xl">Lorem Ipsum</h3>
+                            <p class="font-mullish ">CEO, XYZ Engineering Company</p>
+                            <img src="./image/fake-company-logo (1).png" alt=""
+                            class="w-32">
+                          </div>
+                       </div> <!--main-content wala div, which consists of left and right part both-->
+
+                       <!-- 6-dots wala div -->
+                        <div class="w-full flex flex-row mt-14 space-x-2 justify-center">
+                            <!-- dot-1 -->
+                             <div class="bg-gray-300 rounded-full w-[10px] h-[10px] "></div>
+                             <div class="bg-lightBlue rounded-full w-[10px] h-[10px]  "></div>
+                             <div class="bg-gray-300 rounded-full w-[10px] h-[10px]  "></div>
+                             <div class="bg-gray-300 rounded-full w-[10px] h-[10px] "></div>
+                             <div class="bg-gray-300 rounded-full w-[10px] h-[10px]  "></div>
+                             <div class="bg-gray-300 rounded-full w-[10px] h-[10px]  "></div>
+                        </div>
+
+
+
+                </div> <!--length and breadth wala div-->
+              </section> <!--feature - section-6 wala div -->
+
+
+
+              <!-- feature-seection-7================= -->
+               <section class="bg-[url(/image/bluebg.svg)] relative min-h-[510px] w-full bg-no-repeat">
+                <!-- lenght and breadth wala div -->
+                <div class="relative w-11/12 max-w-[1080px] mx-auto pt-20 ">
+
+
+
+                     
+                    <!-- main-content wala -->
+                     <div class=" flex justify-between pt-14 mx-auto">
+                        <!-- left-part wala div -->
+                         <div class="max-w-[600px] space-y-4 flex-wrap ">
+
+                            <h1 class="text-white font-mullish font-extrabold text-2xl">Supercharge your business with Razorpay</h1>
+                            <div class="w-6 h-1 bg-green-500"></div>
+                            <p class="font-mullish text-white leading-[1.375r">Sign up now to experience the future of payments and offer <br>  your customers the best checkout experience.</p>
+
+                            <ul class="flex flex-wrap gap-x-11 gap-y-3">
+
+
+                                <li class="text-white font-mullish  flex  ">
+                                    <img src="./image/tick-icon.png" alt=""
+                                    class="h-6">
+                                    <span class="opacity-80">Quick Onboarding</span>
+                                </li>
+
+
+                                <li class="text-white font-mullish flex  ">
+                                    <img src="./image/tick-icon.png" alt=""
+                                    class="h-6">
+                                    <span class="opacity-80">Access to entire product suite</span>
+                                </li>
+
+
+                                <li class="text-white font-mullish flex ">
+                                    <img src="./image/tick-icon.png" alt=""
+                                    class="h-6">
+                                    <span class="opacity-80">APt access</span>
+                                </li>
+
+
+                                <li class="text-white font-mullish flex">
+                                    <img src="./image/tick-icon.png" alt=""
+                                    class="h-6">
+                                    <span class="opacity-80">24x7 support</span>
+                                </li>
+
+
+                            </ul>
+                            <button class="font-mullish font-bold text-lightBlue  py-3 px-6  bg-white flex items-center
+                            place-self-start rounded-sm hover:bg-blue-500 transition-all duration-200f">
+                                sign up
+                                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+                                  </svg>
+                                  
+                            </button>
+
+                         </div> <!--left-part wala-->
+
+                         <!-- right-part wala div -->
+                          <div>
+                            <img src="./image/ctaImg.svg" alt=""
+                            class="mt-13 pt-3 h-[282px] w-[240px]">
+
+                          </div> <!--Right wala-->
+
+
+                     </div> <!--main-content wala-->
+
+                </div> <!-- lenght and breadth wala div-->
+
+               </section> <!--feature-section-7 wala div  -->
+
+
+
+               <!-- footer-section---------- -->
+                <footer>
+                  <div>
+                     
+                  </div>
+                </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section> 
+    </div>
+   
+
+
+   
+        
+
+</body>
+</html>
